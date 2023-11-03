@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Owlnambbong
 {
-    internal class Class1
+    internal class Player
     {
+        private int Money;
     }
 }
