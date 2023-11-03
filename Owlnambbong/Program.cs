@@ -1,10 +1,15 @@
-﻿namespace Owlnambbong
+﻿
+using Owlnambbong;
+
+internal class Program
 {
-    internal class Program
+
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            //커밋 테스트
-        }
+
+        Player player = new();
+
+
+
     }
 }
