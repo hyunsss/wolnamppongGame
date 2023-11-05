@@ -12,9 +12,9 @@ namespace Owlnambbong
         private int Money;
         public List<Tuple<int, int>> Card;
 
-        Player()
+        public Player()
         {
-            Card = new List<Tuple<int, int>>;
+            Card = new List<Tuple<int, int>>();
         }
     }
 }

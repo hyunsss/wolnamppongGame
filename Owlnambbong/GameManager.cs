@@ -19,19 +19,18 @@ namespace Owlnambbong
         public void GameStart() { }
 
         public void DrawCard(Player player) { 
-            Random rand = new Random();
-
+            Random rand1 = new Random();
+            Random rand2 = new Random();
             for (int i = 0; i < 2; i++)
             {
-                int First = rand.Next(0, 3);
-                int Second;
-                for (int i2 = 0; i2 < 2; i++)
-                {
-                    Second = rand.Next(0, 12);
-                }
-                player.Card.Add(new Tuple<int, int>(First, Second);
+                int First = rand1.Next(0, 3);
+                int Second = rand2.Next(0, 12);
+                player.Card.Add(new Tuple<int, int>(First, Second));
+                Console.WriteLine("카드를 뽑았습니다. !!!");
             }
         }
+
+        public void ShowCard() { }
 
         public void Judgment() { }
 

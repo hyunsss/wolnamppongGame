@@ -7,7 +7,7 @@ internal class Program
     {
         //
         GameManager manager = new();
-        Player player = new();
+        Player player = new Player();
         manager.DrawCard(player);
 
 
