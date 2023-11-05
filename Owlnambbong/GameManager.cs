@@ -26,8 +26,8 @@ namespace Owlnambbong
                 int First = rand1.Next(0, 3);
                 int Second = rand2.Next(0, 12);
                 player.Card.Add(new Tuple<int, int>(First, Second));
-                Console.WriteLine("카드를 뽑았습니다. !!!");
             }
+            Console.WriteLine("카드를 뽑았습니다. !!!");
         }
 
         public void ShowCard() { }
