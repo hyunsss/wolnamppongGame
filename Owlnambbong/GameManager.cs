@@ -25,14 +25,24 @@ namespace Owlnambbong
             {
                 int First = rand1.Next(0, 3);
                 int Second = rand2.Next(0, 12);
-                player.Card.Add(new Tuple<int, int>(First, Second));
+                player.Card.Add(Tuple.Create(First, Second));
             }
             Console.WriteLine("카드를 뽑았습니다. !!!");
         }
 
-        public void ShowCard() { }
+        public void ShowCard(Player player) { 
+            foreach ( var value in player.Card)
+            {
+                int CardValue = player.Card.Sum(x => x.Item1);  //TUPLE item1(int) 불러오기
+                Console.WriteLine(CardValue);
+                // 위 식을 이용하여 item1의 값을 카드의 문자로 바꿔 출력하고
+                // item2는 숫자 그대로 출력하여 플레이어가 뽑은 카드를 보여줄 수 있도록 한다.
+            }
+        }
 
-        public void Judgment() { }
+        public void Judgment() {
+            //플레어어가 추가로 카드를 뽑았을 때 그 수가 두 카드 값 사이로 들어온다면 승리하고 아니면 패배한다.
+        }
 
     }
 }
